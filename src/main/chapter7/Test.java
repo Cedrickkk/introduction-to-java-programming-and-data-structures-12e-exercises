@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5, 6};
-
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     }
 
     public static int[] initializeArrayFromUserInput(Scanner input, int[] array) {
@@ -17,7 +16,7 @@ public class Test {
 
     public static int[] initializeArrayWithRandomValues(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 100);
+            array[i] = (int) (Math.random() * 100) + 1;
         }
         return array;
     }
@@ -59,8 +58,8 @@ public class Test {
     }
 
     public static int[] shuffleArray(int[] array) {
-        int j = (int) (Math.random() * array.length);
         for (int i = 0; i < array.length; i++) {
+            int j = (int) (Math.random() * array.length);
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
@@ -85,5 +84,31 @@ public class Test {
         System.out.print("Enter a month number (1 to 12): ");
         int monthNumber = input.nextInt();
         System.out.println("The month is " + months[monthNumber - 1]);
+    }
+
+    public static int[] copyArray(int[] array) {
+        int[] copy = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            copy[i] = array[i];
+        }
+        // System.arraycopy(array, 0, copy, 0, array.length);
+        return copy;
+    }
+
+    public static void reverse(int[] array) {
+        for (int i = 0, j = array.length - 1; i < array.length / 2; i++, j--) {
+            // Swap array[i] with array[j]
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+
+    public static int[] reversedCopy(int[] array) {
+        int[] reversedCopy = new int[array.length];
+        for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
+            reversedCopy[j] = array[i];
+        }
+        return reversedCopy;
     }
 }
