@@ -19,7 +19,7 @@ public class EliminateDuplicates {
         int uniqueCounter = 0;
 
         Arrays.sort(list);
-
+        
         temp[uniqueCounter] = list[0];
         uniqueCounter++;
 
