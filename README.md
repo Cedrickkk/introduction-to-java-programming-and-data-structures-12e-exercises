@@ -26,11 +26,38 @@ I've organized everything by chapter to make it easy to find.
 └── README.md
 ```
 
+```
+├── src/
+│   └── main/
+│       ├── chapter02/
+│       │   ├── ComputeChange.java
+│       │   ├── ComputeLoan.java
+│       │   └── ...
+│       ├── chapter03/
+│       │   ├── ComputeAndInterpretBMI.java
+│       │   ├── ...
+│       │   └── case_studies/
+│       │       └── ...
+│       ├── ...
+│       ├── util/ # This directory for general utilities
+│       │   └── Reminder.java # Contains hardcoded motivational quotes
+│       └── Main.java # The main class to run various utilities or tests
+├── .gitignore
+├── java-11-test.iml
+└── README.md
+```
+
 Inside each `chapterXX` folder, you'll find:
 
 - **Listings and Quizzes:** Including `QuizClassname.java` (my answers to chapter quizzes), and `ConceptExamples.java` (
   small code examples to help me grasp key ideas).
 - `casestudies/`: A subfolder containing solutions and notes for case study problems.
+
+You'll also find a util/ directory and Main.java directly within src/main, which contain:
+
+- `util/`: A subfolder for general utility classes.
+- `Reminder.java`: A class that holds a set of hardcoded motivational quotes to keep me going!
+- `Main.java`: A central class to run Reminder class
 
 ## ✨ What's Here
 
