@@ -14,19 +14,6 @@ how programs actually work and making graphical interfaces. My goal here is to r
 I've organized everything by chapter to make it easy to find.
 
 ```
-├── chapter2/ 
-│ ├── ComputeChange.java 
-│ └── ComputeLoan.java 
-├── chapter3/ 
-│ ├── casestudy/
-│ │    ├── ComputeAndInterpretBMI.java 
-│ │	   ├── ...
-│ └── Quiz.java 
-├── ... 
-└── README.md
-```
-
-```
 ├── src/
 │   └── main/
 │       ├── chapter02/
