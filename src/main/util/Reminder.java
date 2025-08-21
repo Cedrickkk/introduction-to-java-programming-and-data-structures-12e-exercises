@@ -40,6 +40,7 @@ public class Reminder {
         quotes.add("💡 The best way to predict the future is to create it. 🏗️");
         quotes.add("✨ It always seems impossible until it's done. 🏆");
         quotes.add("🌱 Resilience: Success is not final, failure is not fatal: it is the courage to continue that counts. 🌟");
+        quotes.add("🗝️ The secret of getting ahead is getting started. 🚶‍♂️‍➡️");
 
         // Trust the Process and Pace Yourself
         quotes.add("⏳ Don't rush the process. Great things take time. 🌸");
